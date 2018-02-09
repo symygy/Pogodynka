@@ -1,0 +1,12 @@
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csprojResolveAssemblyReference.cache
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Properties.Resources.resources
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.GenerateResource.Cache
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.csproj.CoreCompileInputs.cache
+E:\C++ obiektowe\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe.config
+E:\C++ obiektowe\WeatherApp\WeatherApp\bin\Debug\WeatherApp.exe
+E:\C++ obiektowe\WeatherApp\WeatherApp\bin\Debug\WeatherApp.pdb
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.exe
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.pdb
+E:\C++ obiektowe\WeatherApp\WeatherApp\obj\Debug\WeatherApp.Weather.resources
+E:\C++ obiektowe\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.dll
+E:\C++ obiektowe\WeatherApp\WeatherApp\bin\Debug\Newtonsoft.Json.xml
