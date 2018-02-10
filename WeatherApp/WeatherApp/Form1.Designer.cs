@@ -41,6 +41,7 @@ namespace WeatherApp
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.lblTest = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblOpis = new System.Windows.Forms.Label();
@@ -57,7 +58,8 @@ namespace WeatherApp
             this.label14 = new System.Windows.Forms.Label();
             this.imagelist1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dbDzien3 = new System.Windows.Forms.GroupBox();
+            this.gbDzien3 = new System.Windows.Forms.GroupBox();
+            this.lblTestD3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pbDzien3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -72,6 +74,7 @@ namespace WeatherApp
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.gbDzien2 = new System.Windows.Forms.GroupBox();
+            this.lblTestD2 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pbDzien2 = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -86,6 +89,7 @@ namespace WeatherApp
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.gbDzien1 = new System.Windows.Forms.GroupBox();
+            this.lblTestD1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pbDzien1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -104,7 +108,7 @@ namespace WeatherApp
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbChmury)).BeginInit();
             this.groupBox3.SuspendLayout();
-            this.dbDzien3.SuspendLayout();
+            this.gbDzien3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDzien3)).BeginInit();
             this.gbDzien2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDzien2)).BeginInit();
@@ -123,7 +127,7 @@ namespace WeatherApp
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(481, 108);
+            this.groupBox1.Size = new System.Drawing.Size(496, 108);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wyszukaj miasto";
@@ -191,6 +195,7 @@ namespace WeatherApp
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.lblTest);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.lblOpis);
@@ -207,10 +212,20 @@ namespace WeatherApp
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Location = new System.Drawing.Point(12, 126);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(481, 186);
+            this.groupBox2.Size = new System.Drawing.Size(496, 186);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Aktualna pogoda";
+            // 
+            // button2
+            // 
+            this.button2.Image = global::WeatherApp.Properties.Resources._23_Refresh;
+            this.button2.Location = new System.Drawing.Point(407, 57);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 77);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblTest
             // 
@@ -243,7 +258,7 @@ namespace WeatherApp
             // pbChmury
             // 
             this.pbChmury.BackColor = System.Drawing.Color.Transparent;
-            this.pbChmury.Location = new System.Drawing.Point(282, 35);
+            this.pbChmury.Location = new System.Drawing.Point(239, 35);
             this.pbChmury.Name = "pbChmury";
             this.pbChmury.Size = new System.Drawing.Size(100, 50);
             this.pbChmury.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -361,37 +376,47 @@ namespace WeatherApp
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dbDzien3);
+            this.groupBox3.Controls.Add(this.gbDzien3);
             this.groupBox3.Controls.Add(this.gbDzien2);
             this.groupBox3.Controls.Add(this.gbDzien1);
             this.groupBox3.Location = new System.Drawing.Point(12, 318);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(492, 312);
+            this.groupBox3.Size = new System.Drawing.Size(496, 312);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Prognoza na 5 dni";
+            this.groupBox3.Text = "Prognoza na 3 dni";
             // 
-            // dbDzien3
+            // gbDzien3
             // 
-            this.dbDzien3.Controls.Add(this.label7);
-            this.dbDzien3.Controls.Add(this.pbDzien3);
-            this.dbDzien3.Controls.Add(this.label8);
-            this.dbDzien3.Controls.Add(this.lblWilg3);
-            this.dbDzien3.Controls.Add(this.lblCisn3);
-            this.dbDzien3.Controls.Add(this.lblOpis3);
-            this.dbDzien3.Controls.Add(this.lblTemp3);
-            this.dbDzien3.Controls.Add(this.label21);
-            this.dbDzien3.Controls.Add(this.lblTMin3);
-            this.dbDzien3.Controls.Add(this.lblTMax3);
-            this.dbDzien3.Controls.Add(this.label24);
-            this.dbDzien3.Controls.Add(this.label25);
-            this.dbDzien3.Controls.Add(this.label26);
-            this.dbDzien3.Location = new System.Drawing.Point(322, 28);
-            this.dbDzien3.Name = "dbDzien3";
-            this.dbDzien3.Size = new System.Drawing.Size(161, 284);
-            this.dbDzien3.TabIndex = 30;
-            this.dbDzien3.TabStop = false;
-            this.dbDzien3.Text = "3 dzień";
+            this.gbDzien3.Controls.Add(this.lblTestD3);
+            this.gbDzien3.Controls.Add(this.label7);
+            this.gbDzien3.Controls.Add(this.pbDzien3);
+            this.gbDzien3.Controls.Add(this.label8);
+            this.gbDzien3.Controls.Add(this.lblWilg3);
+            this.gbDzien3.Controls.Add(this.lblCisn3);
+            this.gbDzien3.Controls.Add(this.lblOpis3);
+            this.gbDzien3.Controls.Add(this.lblTemp3);
+            this.gbDzien3.Controls.Add(this.label21);
+            this.gbDzien3.Controls.Add(this.lblTMin3);
+            this.gbDzien3.Controls.Add(this.lblTMax3);
+            this.gbDzien3.Controls.Add(this.label24);
+            this.gbDzien3.Controls.Add(this.label25);
+            this.gbDzien3.Controls.Add(this.label26);
+            this.gbDzien3.Location = new System.Drawing.Point(328, 27);
+            this.gbDzien3.Name = "gbDzien3";
+            this.gbDzien3.Size = new System.Drawing.Size(161, 284);
+            this.gbDzien3.TabIndex = 30;
+            this.gbDzien3.TabStop = false;
+            this.gbDzien3.Text = "3 dzień";
+            // 
+            // lblTestD3
+            // 
+            this.lblTestD3.AutoSize = true;
+            this.lblTestD3.Location = new System.Drawing.Point(66, 109);
+            this.lblTestD3.Name = "lblTestD3";
+            this.lblTestD3.Size = new System.Drawing.Size(41, 13);
+            this.lblTestD3.TabIndex = 31;
+            this.lblTestD3.Text = "label11";
             // 
             // label7
             // 
@@ -405,9 +430,11 @@ namespace WeatherApp
             // 
             // pbDzien3
             // 
-            this.pbDzien3.Location = new System.Drawing.Point(22, 29);
+            this.pbDzien3.BackColor = System.Drawing.Color.Transparent;
+            this.pbDzien3.Location = new System.Drawing.Point(57, 29);
             this.pbDzien3.Name = "pbDzien3";
             this.pbDzien3.Size = new System.Drawing.Size(100, 50);
+            this.pbDzien3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDzien3.TabIndex = 1;
             this.pbDzien3.TabStop = false;
             // 
@@ -430,6 +457,7 @@ namespace WeatherApp
             this.lblWilg3.Name = "lblWilg3";
             this.lblWilg3.Size = new System.Drawing.Size(16, 14);
             this.lblWilg3.TabIndex = 24;
+            this.lblWilg3.Tag = "dw3";
             this.lblWilg3.Text = " 0";
             // 
             // lblCisn3
@@ -441,6 +469,7 @@ namespace WeatherApp
             this.lblCisn3.Name = "lblCisn3";
             this.lblCisn3.Size = new System.Drawing.Size(16, 14);
             this.lblCisn3.TabIndex = 23;
+            this.lblCisn3.Tag = "dc3";
             this.lblCisn3.Text = " 0";
             // 
             // lblOpis3
@@ -452,6 +481,7 @@ namespace WeatherApp
             this.lblOpis3.Name = "lblOpis3";
             this.lblOpis3.Size = new System.Drawing.Size(16, 14);
             this.lblOpis3.TabIndex = 27;
+            this.lblOpis3.Tag = "do3";
             this.lblOpis3.Text = " 0";
             // 
             // lblTemp3
@@ -463,6 +493,7 @@ namespace WeatherApp
             this.lblTemp3.Name = "lblTemp3";
             this.lblTemp3.Size = new System.Drawing.Size(16, 14);
             this.lblTemp3.TabIndex = 18;
+            this.lblTemp3.Tag = "dt3";
             this.lblTemp3.Text = " 0";
             // 
             // label21
@@ -484,6 +515,7 @@ namespace WeatherApp
             this.lblTMin3.Name = "lblTMin3";
             this.lblTMin3.Size = new System.Drawing.Size(16, 14);
             this.lblTMin3.TabIndex = 25;
+            this.lblTMin3.Tag = "dtmin3";
             this.lblTMin3.Text = " 0";
             // 
             // lblTMax3
@@ -495,6 +527,7 @@ namespace WeatherApp
             this.lblTMax3.Name = "lblTMax3";
             this.lblTMax3.Size = new System.Drawing.Size(16, 14);
             this.lblTMax3.TabIndex = 26;
+            this.lblTMax3.Tag = "dtmax3";
             this.lblTMax3.Text = " 0";
             // 
             // label24
@@ -529,6 +562,7 @@ namespace WeatherApp
             // 
             // gbDzien2
             // 
+            this.gbDzien2.Controls.Add(this.lblTestD2);
             this.gbDzien2.Controls.Add(this.label27);
             this.gbDzien2.Controls.Add(this.pbDzien2);
             this.gbDzien2.Controls.Add(this.label28);
@@ -542,12 +576,21 @@ namespace WeatherApp
             this.gbDzien2.Controls.Add(this.label36);
             this.gbDzien2.Controls.Add(this.label37);
             this.gbDzien2.Controls.Add(this.label38);
-            this.gbDzien2.Location = new System.Drawing.Point(157, 28);
+            this.gbDzien2.Location = new System.Drawing.Point(163, 27);
             this.gbDzien2.Name = "gbDzien2";
             this.gbDzien2.Size = new System.Drawing.Size(159, 284);
             this.gbDzien2.TabIndex = 29;
             this.gbDzien2.TabStop = false;
             this.gbDzien2.Text = "2 dzień";
+            // 
+            // lblTestD2
+            // 
+            this.lblTestD2.AutoSize = true;
+            this.lblTestD2.Location = new System.Drawing.Point(50, 109);
+            this.lblTestD2.Name = "lblTestD2";
+            this.lblTestD2.Size = new System.Drawing.Size(41, 13);
+            this.lblTestD2.TabIndex = 30;
+            this.lblTestD2.Text = "label10";
             // 
             // label27
             // 
@@ -561,9 +604,11 @@ namespace WeatherApp
             // 
             // pbDzien2
             // 
-            this.pbDzien2.Location = new System.Drawing.Point(22, 29);
+            this.pbDzien2.BackColor = System.Drawing.Color.Transparent;
+            this.pbDzien2.Location = new System.Drawing.Point(56, 29);
             this.pbDzien2.Name = "pbDzien2";
             this.pbDzien2.Size = new System.Drawing.Size(100, 50);
+            this.pbDzien2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDzien2.TabIndex = 1;
             this.pbDzien2.TabStop = false;
             // 
@@ -586,6 +631,7 @@ namespace WeatherApp
             this.lblWilg2.Name = "lblWilg2";
             this.lblWilg2.Size = new System.Drawing.Size(16, 14);
             this.lblWilg2.TabIndex = 24;
+            this.lblWilg2.Tag = "dw2";
             this.lblWilg2.Text = " 0";
             // 
             // lblCisn2
@@ -597,6 +643,7 @@ namespace WeatherApp
             this.lblCisn2.Name = "lblCisn2";
             this.lblCisn2.Size = new System.Drawing.Size(16, 14);
             this.lblCisn2.TabIndex = 23;
+            this.lblCisn2.Tag = "dc2";
             this.lblCisn2.Text = " 0";
             // 
             // lblOpis2
@@ -608,6 +655,7 @@ namespace WeatherApp
             this.lblOpis2.Name = "lblOpis2";
             this.lblOpis2.Size = new System.Drawing.Size(16, 14);
             this.lblOpis2.TabIndex = 27;
+            this.lblOpis2.Tag = "do2";
             this.lblOpis2.Text = " 0";
             // 
             // lblTemp2
@@ -619,6 +667,7 @@ namespace WeatherApp
             this.lblTemp2.Name = "lblTemp2";
             this.lblTemp2.Size = new System.Drawing.Size(16, 14);
             this.lblTemp2.TabIndex = 18;
+            this.lblTemp2.Tag = "dt2";
             this.lblTemp2.Text = " 0";
             // 
             // label33
@@ -640,6 +689,7 @@ namespace WeatherApp
             this.lblTMin2.Name = "lblTMin2";
             this.lblTMin2.Size = new System.Drawing.Size(16, 14);
             this.lblTMin2.TabIndex = 25;
+            this.lblTMin2.Tag = "dtmin2";
             this.lblTMin2.Text = " 0";
             // 
             // lblTMax2
@@ -651,6 +701,7 @@ namespace WeatherApp
             this.lblTMax2.Name = "lblTMax2";
             this.lblTMax2.Size = new System.Drawing.Size(16, 14);
             this.lblTMax2.TabIndex = 26;
+            this.lblTMax2.Tag = "dtmax2";
             this.lblTMax2.Text = " 0";
             // 
             // label36
@@ -685,6 +736,7 @@ namespace WeatherApp
             // 
             // gbDzien1
             // 
+            this.gbDzien1.Controls.Add(this.lblTestD1);
             this.gbDzien1.Controls.Add(this.label6);
             this.gbDzien1.Controls.Add(this.pbDzien1);
             this.gbDzien1.Controls.Add(this.label18);
@@ -698,12 +750,21 @@ namespace WeatherApp
             this.gbDzien1.Controls.Add(this.label15);
             this.gbDzien1.Controls.Add(this.label16);
             this.gbDzien1.Controls.Add(this.label20);
-            this.gbDzien1.Location = new System.Drawing.Point(3, 27);
+            this.gbDzien1.Location = new System.Drawing.Point(5, 27);
             this.gbDzien1.Name = "gbDzien1";
-            this.gbDzien1.Size = new System.Drawing.Size(148, 284);
+            this.gbDzien1.Size = new System.Drawing.Size(152, 284);
             this.gbDzien1.TabIndex = 3;
             this.gbDzien1.TabStop = false;
             this.gbDzien1.Text = "1 dzień";
+            // 
+            // lblTestD1
+            // 
+            this.lblTestD1.AutoSize = true;
+            this.lblTestD1.Location = new System.Drawing.Point(20, 109);
+            this.lblTestD1.Name = "lblTestD1";
+            this.lblTestD1.Size = new System.Drawing.Size(35, 13);
+            this.lblTestD1.TabIndex = 29;
+            this.lblTestD1.Text = "label9";
             // 
             // label6
             // 
@@ -717,9 +778,11 @@ namespace WeatherApp
             // 
             // pbDzien1
             // 
-            this.pbDzien1.Location = new System.Drawing.Point(22, 29);
+            this.pbDzien1.BackColor = System.Drawing.Color.Transparent;
+            this.pbDzien1.Location = new System.Drawing.Point(49, 29);
             this.pbDzien1.Name = "pbDzien1";
             this.pbDzien1.Size = new System.Drawing.Size(100, 50);
+            this.pbDzien1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDzien1.TabIndex = 1;
             this.pbDzien1.TabStop = false;
             // 
@@ -742,6 +805,7 @@ namespace WeatherApp
             this.lblWilg1.Name = "lblWilg1";
             this.lblWilg1.Size = new System.Drawing.Size(16, 14);
             this.lblWilg1.TabIndex = 24;
+            this.lblWilg1.Tag = "dw1";
             this.lblWilg1.Text = " 0";
             // 
             // lblCisn1
@@ -753,6 +817,7 @@ namespace WeatherApp
             this.lblCisn1.Name = "lblCisn1";
             this.lblCisn1.Size = new System.Drawing.Size(16, 14);
             this.lblCisn1.TabIndex = 23;
+            this.lblCisn1.Tag = "dc1";
             this.lblCisn1.Text = " 0";
             // 
             // lblOpis1
@@ -764,6 +829,7 @@ namespace WeatherApp
             this.lblOpis1.Name = "lblOpis1";
             this.lblOpis1.Size = new System.Drawing.Size(16, 14);
             this.lblOpis1.TabIndex = 27;
+            this.lblOpis1.Tag = "do1";
             this.lblOpis1.Text = " 0";
             // 
             // lblTemp1
@@ -775,7 +841,7 @@ namespace WeatherApp
             this.lblTemp1.Name = "lblTemp1";
             this.lblTemp1.Size = new System.Drawing.Size(16, 14);
             this.lblTemp1.TabIndex = 18;
-            this.lblTemp1.Tag = "edytowalne";
+            this.lblTemp1.Tag = "dt1";
             this.lblTemp1.Text = " 0";
             // 
             // label17
@@ -797,6 +863,7 @@ namespace WeatherApp
             this.lblTMin1.Name = "lblTMin1";
             this.lblTMin1.Size = new System.Drawing.Size(16, 14);
             this.lblTMin1.TabIndex = 25;
+            this.lblTMin1.Tag = "dtmin1";
             this.lblTMin1.Text = " 0";
             // 
             // lblTMax1
@@ -808,6 +875,7 @@ namespace WeatherApp
             this.lblTMax1.Name = "lblTMax1";
             this.lblTMax1.Size = new System.Drawing.Size(16, 14);
             this.lblTMax1.TabIndex = 26;
+            this.lblTMax1.Tag = "dtmax1";
             this.lblTMax1.Text = " 0";
             // 
             // label15
@@ -842,15 +910,23 @@ namespace WeatherApp
             // 
             // imagelist2
             // 
-            this.imagelist2.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imagelist2.ImageSize = new System.Drawing.Size(32, 32);
+            this.imagelist2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagelist2.ImageStream")));
             this.imagelist2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imagelist2.Images.SetKeyName(0, "a1.png");
+            this.imagelist2.Images.SetKeyName(1, "a2 (2).png");
+            this.imagelist2.Images.SetKeyName(2, "a3.png");
+            this.imagelist2.Images.SetKeyName(3, "a4.png");
+            this.imagelist2.Images.SetKeyName(4, "a5.png");
+            this.imagelist2.Images.SetKeyName(5, "a6.png");
+            this.imagelist2.Images.SetKeyName(6, "a7.png");
+            this.imagelist2.Images.SetKeyName(7, "a8.png");
+            this.imagelist2.Images.SetKeyName(8, "a9.png");
             // 
             // Weather
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 642);
+            this.ClientSize = new System.Drawing.Size(513, 642);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -862,8 +938,8 @@ namespace WeatherApp
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbChmury)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            this.dbDzien3.ResumeLayout(false);
-            this.dbDzien3.PerformLayout();
+            this.gbDzien3.ResumeLayout(false);
+            this.gbDzien3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDzien3)).EndInit();
             this.gbDzien2.ResumeLayout(false);
             this.gbDzien2.PerformLayout();
@@ -903,7 +979,7 @@ namespace WeatherApp
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ImageList imagelist2;
         private System.Windows.Forms.Label lblTest;
-        private System.Windows.Forms.GroupBox dbDzien3;
+        private System.Windows.Forms.GroupBox gbDzien3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pbDzien3;
         private System.Windows.Forms.Label label8;
@@ -945,6 +1021,10 @@ namespace WeatherApp
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblTestD3;
+        private System.Windows.Forms.Label lblTestD2;
+        private System.Windows.Forms.Label lblTestD1;
+        private System.Windows.Forms.Button button2;
 
         public EventHandler button1_ClickAsync { get; private set; }
     }

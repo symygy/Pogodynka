@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeatherApp
 {
-    class Forecast
+    public class Forecast
     {
 
         public class Rootobject
