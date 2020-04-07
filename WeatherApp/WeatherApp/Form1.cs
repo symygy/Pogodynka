@@ -22,7 +22,7 @@ namespace WeatherApp
 {
     public partial class Weather : Form
     {
-        const string APIKey = "13d6178ceca4c4af84e3d0478b0a0fba";
+        const string APIKey = "xxx";
         int kod_pogodyAktualna;
         int[] kod_pogodyPrognoza = new int[3]; // pobiera informacje na temat aktualnej pogody by wyswietlic ikone
 
